@@ -2,7 +2,10 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/6-latte.jpg") no-repeat center center/cover;
   width: 100vw;
-  height: 50vh;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-container {
     max-width: 900px;
@@ -27,9 +30,16 @@
     }
   }
 }
+@media screen and (max-width: 575.98px) {
+  .coffee-latte-container {
+    img {
+      display: none;
+    }
+  }
+}
 .coffee-expreso {
   background-color: #333;
-  height: 35vh;
+  min-height: 35vh;
   padding: 0 1rem;
   text-align: center;
   display: flex;
@@ -49,7 +59,7 @@
 }
 @media screen and (min-width: 768px) {
   .coffee-expreso {
-    height: 17vh;
+    min-height: 17vh;
     position: relative;
 
     & > div {

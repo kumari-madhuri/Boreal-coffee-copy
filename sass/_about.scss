@@ -1,7 +1,28 @@
 .home {
   &.about {
-    height: 50vh;
+    height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../img/about.png") no-repeat center center/cover;
+
+    .center {
+      text-align: center;
+      margin-top: 6rem;
+      color: #fff;
+    }
+  }
+}
+.about-article-container {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+
+  img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-article-container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 4rem 5rem;
   }
 }

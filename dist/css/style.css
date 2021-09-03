@@ -81,7 +81,8 @@ button {
 .section-title-center {
   text-align: center; }
   .section-title-center .underline {
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 0.3rem; }
 
 .current {
   border-bottom: 2px solid #7fff7f; }
@@ -126,7 +127,10 @@ button {
 .coffee-latte {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/6-latte.jpg") no-repeat center center/cover;
   width: 100vw;
-  height: 50vh; }
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .coffee-latte-container {
     max-width: 900px;
     width: 90vw;
@@ -145,9 +149,13 @@ button {
       margin: 0 auto;
       height: 3rem; }
 
+@media screen and (max-width: 575.98px) {
+  .coffee-latte-container img {
+    display: none; } }
+
 .coffee-expreso {
   background-color: #333;
-  height: 35vh;
+  min-height: 35vh;
   padding: 0 1rem;
   text-align: center;
   display: flex;
@@ -161,7 +169,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .coffee-expreso {
-    height: 17vh;
+    min-height: 17vh;
     position: relative; }
     .coffee-expreso > div {
       display: grid;
@@ -271,8 +279,24 @@ button {
       margin: 0 auto; } }
 
 .home.about {
-  height: 50vh;
+  height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/about.png") no-repeat center center/cover; }
+  .home.about .center {
+    text-align: center;
+    margin-top: 6rem;
+    color: #fff; }
+
+.about-article-container {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem; }
+  .about-article-container img {
+    width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .about-article-container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 4rem 5rem; } }
 
 .home {
   background: url("../img/1-hero.jpg") no-repeat center center/cover;
