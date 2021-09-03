@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=STIX+Two+Math&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+$clr-primary-1: #4ca64c;
+$clr-primary-2: #009900;
+$clr-primary-3: #00cc00;
+$clr-primary-4: #009900;
+$clr-primary-5: #7fff7f;
+$clr-grey-1: #102a42;
+$clr-grey-2: hsl(210, 22%, 49%);
+
+$font-family-heading: "Roboto", sans-serif;
+$font-family-body: "Open Sans", sans-serif;
+
+$transition: all 0.3s linear;
+$spacing: 0.1rem;
+$radius: 0.25rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1170px;

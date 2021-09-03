@@ -1,0 +1,44 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  // background-color: #fff;
+  font-family: $font-family-body;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: $spacing;
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-family: $font-family-heading;
+}
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+p {
+  color: $clr-grey-1;
+}
+.img {
+  width: 100%;
+  display: block;
+}
+button {
+  background-color: transparent;
+  border: none;
+}

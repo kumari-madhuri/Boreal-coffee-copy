@@ -1,0 +1,50 @@
+.btn {
+  display: block;
+  border: 1px solid #fff;
+  // padding: 0.5rem 1rem;
+  text-align: center;
+  height: 3rem;
+  width: 15rem;
+  margin-bottom: 0.5rem;
+  transition: $transition;
+
+  &:hover {
+    background-color: $clr-primary-2;
+  }
+  a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    i {
+      color: $clr-primary-5;
+      transition: $transition;
+    }
+  }
+}
+.btn:hover a i {
+  transform: translateX(5px);
+  color: #fff;
+}
+.colored-text {
+  color: $clr-primary-3;
+}
+
+.underline {
+  height: 0.2rem;
+  width: 5rem;
+  margin-top: 0.3rem;
+  background-color: $clr-primary-2;
+}
+.section-title {
+  margin-bottom: 1rem;
+}
+.section-title-center {
+  text-align: center;
+  .underline {
+    margin: 0 auto;
+  }
+}
+.current {
+  border-bottom: 2px solid $clr-primary-5;
+}

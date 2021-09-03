@@ -1,0 +1,53 @@
+.coffee {
+  &-photo {
+    background: url("../img/3-home-left.jpg") no-repeat left center/cover;
+    height: 80vh;
+    width: 100vw;
+    &:hover {
+      background-image: url("../img/3-home-left-hover.jpg");
+    }
+  }
+
+  &-info {
+    width: 90vw;
+    margin: 2rem auto;
+    p {
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .coffee {
+    display: flex;
+
+    &-photo {
+      width: 94%;
+    }
+
+    &-info {
+      padding: 0 2rem;
+      align-self: center;
+    }
+  }
+}
+
+.coffee-2 {
+  flex-direction: row-reverse;
+  &-photo {
+    background-image: url("../img/5-home-righthover.jpg");
+  }
+  &-photo:hover {
+    background-image: url("../img/5-home-righthover.jpg");
+  }
+}
+.coffee-btn {
+  background-color: $clr-primary-2;
+}
+
+@media screen and (min-width: 1300px) {
+  .coffee-photo {
+    height: 60vh;
+  }
+}

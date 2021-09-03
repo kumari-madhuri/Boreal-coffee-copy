@@ -1,0 +1,140 @@
+@import "variabls";
+@import "globalStyle";
+@import "utilities";
+@import "homeSection-1";
+@import "homeCofeMaker";
+@import "home-footer";
+@import "about";
+
+.home {
+  background: url("../img/1-hero.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+.scroll-down {
+  background: url("../img/download.png") no-repeat center center/50px;
+  height: 100px;
+  width: 50px;
+  margin: 0 auto;
+}
+// =========
+// Navbar
+// =========
+.logo {
+  height: 50px;
+  cursor: pointer;
+}
+.nav {
+  max-width: $max-width;
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+
+  &-small {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-icons {
+    align-self: flex-end;
+    ul {
+      display: flex;
+      li {
+        cursor: pointer;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        border-left: 1px solid #fff;
+        &:first-child {
+          border: none;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        &:hover {
+          color: $clr-primary-5;
+        }
+      }
+    }
+  }
+
+  &-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .logo {
+    height: 60px;
+  }
+  .nav {
+    // position: sticky;
+    // top: 0;
+
+    &-icons {
+      display: none;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .nav-links {
+    display: block;
+    align-self: flex-end;
+    ul {
+      display: flex;
+      li {
+        border-left: 1px solid #fff;
+        &:first-child {
+          border: none;
+        }
+        padding: 0 1.5rem;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        a {
+          color: #fff;
+          font-family: $font-family-heading;
+          font-size: 0.875rem;
+          text-transform: uppercase;
+          i {
+            margin-right: 0.5rem;
+          }
+          &:hover {
+            color: $clr-primary-5;
+          }
+        }
+      }
+    }
+  }
+}
+// =========
+// Hero
+// =========
+.hero {
+  width: 90vw;
+  height: 75vh;
+  // max-width: $max-width;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-flex {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-self: center;
+  }
+  &-img {
+    width: 100%;
+    object-fit: contain;
+  }
+}

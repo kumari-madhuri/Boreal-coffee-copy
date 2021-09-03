@@ -1,0 +1,66 @@
+.coffee-latte {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/6-latte.jpg") no-repeat center center/cover;
+  width: 100vw;
+  height: 50vh;
+
+  &-container {
+    max-width: 900px;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+    .section-title {
+      color: #fff;
+      .underline {
+        margin-top: 0.5rem;
+      }
+    }
+    p {
+      color: #fff;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 3rem;
+    }
+  }
+}
+.coffee-expreso {
+  background-color: #333;
+  height: 35vh;
+  padding: 0 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &-img {
+    height: 100px;
+  }
+
+  &-info {
+    h3 {
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .coffee-expreso {
+    height: 17vh;
+    position: relative;
+
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &-img {
+      height: 130px;
+      position: absolute;
+      bottom: -19px;
+      left: 70%;
+    }
+  }
+}
