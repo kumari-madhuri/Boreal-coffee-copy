@@ -87,19 +87,20 @@ button {
 .current {
   border-bottom: 2px solid #7fff7f; }
 
-.coffee-photo {
-  background: url("../img/3-home-left.jpg") no-repeat left center/cover;
-  height: 80vh;
-  width: 100vw; }
-  .coffee-photo:hover {
-    background-image: url("../img/3-home-left-hover.jpg"); }
-
-.coffee-info {
-  width: 90vw;
-  margin: 2rem auto; }
-  .coffee-info p {
-    text-align: justify;
-    margin-bottom: 1rem; }
+.coffee {
+  overflow: hidden; }
+  .coffee-photo {
+    background: url("../img/3-home-left.jpg") no-repeat left center/cover;
+    height: 80vh;
+    width: 100vw; }
+    .coffee-photo:hover {
+      background-image: url("../img/3-home-left-hover.jpg"); }
+  .coffee-info {
+    width: 90vw;
+    margin: 2rem auto; }
+    .coffee-info p {
+      text-align: justify;
+      margin-bottom: 1rem; }
 
 @media screen and (min-width: 768px) {
   .coffee {

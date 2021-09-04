@@ -1,4 +1,5 @@
 .coffee {
+  overflow: hidden;
   &-photo {
     background: url("../img/3-home-left.jpg") no-repeat left center/cover;
     height: 80vh;

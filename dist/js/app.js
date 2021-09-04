@@ -14,6 +14,9 @@ gsap.from(".right", {
   scrollTrigger: {
     trigger: ".right",
     start: "top 80%",
+    // end: "bottom 90%",
+    // scrub: true,
+    markers: true,
     toggleActions: "restart none none reset",
   },
   x: 150,
@@ -34,7 +37,6 @@ gsap.from(".bottom", {
   scrollTrigger: {
     trigger: ".bottom",
     start: "top 90%",
-    // markers: true,
     toggleActions: "restart none none reset",
   },
   y: 150,
