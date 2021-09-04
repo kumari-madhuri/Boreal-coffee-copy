@@ -16,7 +16,7 @@ gsap.from(".right", {
     start: "top 80%",
     // end: "bottom 90%",
     // scrub: true,
-    markers: true,
+    // markers: true,
     toggleActions: "restart none none reset",
   },
   x: 150,
